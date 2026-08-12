@@ -1,0 +1,182 @@
+/* ==========================================================================
+   Servicios Page Styles — NOUS CONCEPTS
+   Styles for intro, service categories, service cards, and contact section.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Intro Section
+   -------------------------------------------------------------------------- */
+
+.servicios-intro {
+  padding-block: var(--spacing-lg);
+  text-align: center;
+}
+
+.servicios-intro__heading {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-sm);
+}
+
+.servicios-intro__text {
+  max-width: 700px;
+  margin-inline: auto;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-lg);
+  line-height: 1.6;
+}
+
+/* --------------------------------------------------------------------------
+   Service Categories
+   -------------------------------------------------------------------------- */
+
+.service-category {
+  padding-block: var(--spacing-md);
+}
+
+.service-category__heading {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-xs);
+  border-bottom: 2px solid var(--color-accent);
+  display: inline-block;
+}
+
+/* --------------------------------------------------------------------------
+   Service Cards Grid
+   -------------------------------------------------------------------------- */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.service-card {
+  background-color: var(--color-surface);
+  border-radius: 8px;
+  padding: var(--spacing-md);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.service-card__title {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-lg);
+  color: var(--color-text);
+  margin-bottom: var(--spacing-xs);
+}
+
+.service-card__description {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+}
+
+/* --------------------------------------------------------------------------
+   Contact Section
+   -------------------------------------------------------------------------- */
+
+.servicios-contact {
+  padding-block: var(--spacing-lg);
+  text-align: center;
+  background-color: var(--color-surface);
+  border-radius: 8px;
+  margin-top: var(--spacing-lg);
+}
+
+.servicios-contact__heading {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-sm);
+}
+
+.servicios-contact__text {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-md);
+}
+
+.servicios-contact__email {
+  display: inline-block;
+  color: var(--color-accent);
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  margin-bottom: var(--spacing-sm);
+}
+
+.servicios-contact__email:hover,
+.servicios-contact__email:focus {
+  color: var(--color-text);
+}
+
+.servicios-contact__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-sm);
+}
+
+.servicios-contact__social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color-secondary);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.servicios-contact__social a:hover,
+.servicios-contact__social a:focus {
+  background-color: var(--color-accent);
+  transform: scale(1.1);
+}
+
+.servicios-contact__social img {
+  width: 20px;
+  height: 20px;
+}
+
+/* --------------------------------------------------------------------------
+   Responsive — Servicios (≤ 768px)
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+  .servicios-intro {
+    padding-block: var(--spacing-md);
+  }
+
+  .servicios-intro__heading {
+    font-size: var(--font-size-lg);
+  }
+
+  .servicios-intro__text {
+    font-size: var(--font-size-base);
+  }
+
+  .service-category__heading {
+    font-size: var(--font-size-lg);
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+
+  .servicios-contact {
+    padding-block: var(--spacing-md);
+    margin-top: var(--spacing-md);
+  }
+
+  .servicios-contact__heading {
+    font-size: var(--font-size-lg);
+  }
+}

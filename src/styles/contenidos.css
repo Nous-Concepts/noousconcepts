@@ -1,0 +1,81 @@
+/* ==========================================================================
+   Contenidos Page Styles — NOUS CONCEPTS
+   Styles for intro section, category headings, and project cards grid.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Intro Section
+   -------------------------------------------------------------------------- */
+
+.contenidos-intro {
+  padding-block: var(--spacing-lg);
+  text-align: center;
+}
+
+.contenidos-intro__heading {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-sm);
+}
+
+.contenidos-intro__text {
+  max-width: 600px;
+  margin-inline: auto;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-lg);
+  line-height: 1.6;
+}
+
+/* --------------------------------------------------------------------------
+   Category Sections
+   -------------------------------------------------------------------------- */
+
+.category {
+  padding-block: var(--spacing-md);
+}
+
+.category__heading {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-xs);
+  border-bottom: 2px solid var(--color-accent);
+  display: inline-block;
+}
+
+/* --------------------------------------------------------------------------
+   Project Cards Grid
+   -------------------------------------------------------------------------- */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--spacing-md);
+}
+
+/* --------------------------------------------------------------------------
+   Responsive — Contenidos (≤ 768px)
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+  .contenidos-intro {
+    padding-block: var(--spacing-md);
+  }
+
+  .contenidos-intro__heading {
+    font-size: var(--font-size-lg);
+  }
+
+  .contenidos-intro__text {
+    font-size: var(--font-size-base);
+  }
+
+  .category__heading {
+    font-size: var(--font-size-lg);
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+}

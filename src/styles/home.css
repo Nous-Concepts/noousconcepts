@@ -1,0 +1,249 @@
+/* ==========================================================================
+   Home Page Styles — NOUS CONCEPTS
+   Styles for hero, description, services preview, contents preview,
+   about section, and contact CTA.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Hero Section
+   -------------------------------------------------------------------------- */
+
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: calc(100vh - var(--nav-height));
+  padding: var(--spacing-xl) var(--spacing-sm);
+  background-color: var(--color-secondary);
+  overflow: hidden;
+}
+
+.hero__banner {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+}
+
+.hero__title {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-hero);
+  color: var(--color-text);
+  margin-bottom: var(--spacing-sm);
+  letter-spacing: 0.05em;
+}
+
+.hero__tagline {
+  font-family: var(--font-body);
+  font-size: var(--font-size-xl);
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+/* --------------------------------------------------------------------------
+   Studio Description Section
+   -------------------------------------------------------------------------- */
+
+.description {
+  padding-block: var(--spacing-lg);
+}
+
+.description__text {
+  max-width: 720px;
+  margin-inline: auto;
+  font-size: var(--font-size-lg);
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* --------------------------------------------------------------------------
+   Services Preview Section
+   -------------------------------------------------------------------------- */
+
+.services-preview {
+  padding-block: var(--spacing-lg);
+  background-color: var(--color-surface);
+}
+
+.services-preview__heading {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-xl);
+  text-align: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.services-preview__text {
+  max-width: 600px;
+  margin-inline: auto;
+  text-align: center;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-md);
+}
+
+.services-preview__link {
+  display: block;
+  text-align: center;
+  color: var(--color-accent);
+  font-weight: 700;
+  font-size: var(--font-size-lg);
+}
+
+.services-preview__link:hover,
+.services-preview__link:focus {
+  color: var(--color-text);
+}
+
+/* --------------------------------------------------------------------------
+   Contents Preview Section
+   -------------------------------------------------------------------------- */
+
+.contents-preview {
+  padding-block: var(--spacing-lg);
+}
+
+.contents-preview__heading {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-xl);
+  text-align: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.contents-preview__text {
+  max-width: 600px;
+  margin-inline: auto;
+  text-align: center;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-md);
+}
+
+.contents-preview__link {
+  display: block;
+  text-align: center;
+  color: var(--color-accent);
+  font-weight: 700;
+  font-size: var(--font-size-lg);
+}
+
+.contents-preview__link:hover,
+.contents-preview__link:focus {
+  color: var(--color-text);
+}
+
+/* --------------------------------------------------------------------------
+   About Section (Sobre Nosotros)
+   -------------------------------------------------------------------------- */
+
+.about {
+  padding-block: var(--spacing-lg);
+  background-color: var(--color-surface);
+}
+
+.about__heading {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-xl);
+  text-align: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.about__text {
+  max-width: 720px;
+  margin-inline: auto;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* --------------------------------------------------------------------------
+   Contact CTA Section
+   -------------------------------------------------------------------------- */
+
+.cta {
+  padding-block: var(--spacing-xl);
+  text-align: center;
+}
+
+.cta__heading {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-sm);
+}
+
+.cta__text {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-md);
+}
+
+.cta__button {
+  display: inline-block;
+  padding: var(--spacing-sm) var(--spacing-md);
+  background-color: var(--color-accent);
+  color: var(--color-text);
+  font-weight: 700;
+  font-size: var(--font-size-lg);
+  border-radius: 4px;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.cta__button:hover,
+.cta__button:focus {
+  background-color: #d63050;
+  color: var(--color-text);
+  transform: translateY(-2px);
+}
+
+.cta__button:active {
+  transform: translateY(0);
+}
+
+/* --------------------------------------------------------------------------
+   Responsive — Home (≤ 768px)
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 60vh;
+    padding: var(--spacing-lg) var(--spacing-sm);
+  }
+
+  .hero__title {
+    font-size: var(--font-size-xl);
+  }
+
+  .hero__tagline {
+    font-size: var(--font-size-lg);
+  }
+
+  .description__text,
+  .about__text {
+    font-size: var(--font-size-base);
+  }
+
+  .services-preview,
+  .contents-preview,
+  .about {
+    padding-block: var(--spacing-md);
+  }
+
+  .cta {
+    padding-block: var(--spacing-lg);
+  }
+
+  .cta__heading {
+    font-size: var(--font-size-lg);
+  }
+}

@@ -1,0 +1,36 @@
+/* ==========================================================================
+   Design Tokens — NOUS CONCEPTS
+   CSS Custom Properties for consistent theming across the site.
+   ========================================================================== */
+
+:root {
+  /* Colores */
+  --color-primary: #1a1a2e;
+  --color-secondary: #16213e;
+  --color-accent: #e94560;
+  --color-text: #eaeaea;
+  --color-text-muted: #a0a0a0;
+  --color-bg: #0f0f1a;
+  --color-surface: #1a1a2e;
+
+  /* Tipografía */
+  --font-heading: 'CustomHeading', sans-serif;
+  --font-body: 'CustomBody', sans-serif;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 2rem;
+  --font-size-hero: 3.5rem;
+
+  /* Espaciado */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 6rem;
+
+  /* Breakpoints (referencia — usados en media queries) */
+  --breakpoint-mobile: 768px;
+
+  /* Navegación */
+  --nav-height: 64px;
+}
