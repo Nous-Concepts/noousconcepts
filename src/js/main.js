@@ -1,9 +1,11 @@
 /**
  * Component loader module for NOUS CONCEPTS website.
- * Loads reusable HTML fragments (nav, footer) into page placeholders via fetch.
+ * Loads reusable HTML fragments (header, nav, footer) into page placeholders via fetch.
  */
 
+import { initHeader } from './header.js';
 import { initNavigation } from './nav.js';
+import { initScrollMoreButtons } from './scroll-more.js';
 
 /**
  * Loads an HTML fragment from componentPath and inserts it into the element
@@ -33,14 +35,16 @@ async function loadComponent(selector, componentPath) {
 
 /**
  * Orchestrates the loading of reusable components and initializes page functionality.
- * Loads nav and footer components, then initializes navigation interactivity.
+ * Loads header, nav, and footer components, then initializes interactivity.
  */
 async function initPage() {
+  await loadComponent('#header-placeholder', '../components/header.html');
   await loadComponent('#nav-placeholder', '../components/nav.html');
   await loadComponent('#footer-placeholder', '../components/footer.html');
 
-  // Initialize navigation after the nav HTML has been inserted into the DOM
+  initHeader();
   initNavigation();
+  initScrollMoreButtons();
 }
 
 // Auto-initialize when DOM is ready

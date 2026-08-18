@@ -5,6 +5,15 @@
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
+   Body — Dark mode is the default theme
+   -------------------------------------------------------------------------- */
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* --------------------------------------------------------------------------
    Hero Section
    -------------------------------------------------------------------------- */
 
@@ -15,8 +24,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  min-height: calc(100vh - var(--nav-height));
-  padding: var(--spacing-xl) var(--spacing-sm);
+  min-height: 60vh;
+  padding: var(--spacing-lg) var(--spacing-sm);
   background-color: var(--color-secondary);
   overflow: hidden;
 }
@@ -38,7 +47,7 @@
 
 .hero__title {
   font-family: var(--font-heading);
-  font-size: var(--font-size-hero);
+  font-size: var(--font-size-xl);
   color: var(--color-text);
   margin-bottom: var(--spacing-sm);
   letter-spacing: 0.05em;
@@ -46,7 +55,7 @@
 
 .hero__tagline {
   font-family: var(--font-body);
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-lg);
   color: var(--color-text-muted);
   font-style: italic;
 }
@@ -57,12 +66,14 @@
 
 .description {
   padding-block: var(--spacing-lg);
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }
 
 .description__text {
   max-width: 720px;
   margin-inline: auto;
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-base);
   color: var(--color-text-muted);
   line-height: 1.7;
   text-align: center;
@@ -73,7 +84,7 @@
    -------------------------------------------------------------------------- */
 
 .services-preview {
-  padding-block: var(--spacing-lg);
+  padding-block: var(--spacing-md);
   background-color: var(--color-surface);
 }
 
@@ -82,6 +93,7 @@
   font-size: var(--font-size-xl);
   text-align: center;
   margin-bottom: var(--spacing-md);
+  color: var(--color-text);
 }
 
 .services-preview__text {
@@ -111,7 +123,9 @@
    -------------------------------------------------------------------------- */
 
 .contents-preview {
-  padding-block: var(--spacing-lg);
+  padding-block: var(--spacing-md);
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }
 
 .contents-preview__heading {
@@ -119,6 +133,7 @@
   font-size: var(--font-size-xl);
   text-align: center;
   margin-bottom: var(--spacing-md);
+  color: var(--color-text);
 }
 
 .contents-preview__text {
@@ -148,7 +163,7 @@
    -------------------------------------------------------------------------- */
 
 .about {
-  padding-block: var(--spacing-lg);
+  padding-block: var(--spacing-md);
   background-color: var(--color-surface);
 }
 
@@ -157,6 +172,7 @@
   font-size: var(--font-size-xl);
   text-align: center;
   margin-bottom: var(--spacing-md);
+  color: var(--color-text);
 }
 
 .about__text {
@@ -172,14 +188,17 @@
    -------------------------------------------------------------------------- */
 
 .cta {
-  padding-block: var(--spacing-xl);
+  padding-block: var(--spacing-lg);
   text-align: center;
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }
 
 .cta__heading {
   font-family: var(--font-heading);
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-lg);
   margin-bottom: var(--spacing-sm);
+  color: var(--color-text);
 }
 
 .cta__text {
@@ -211,39 +230,74 @@
 }
 
 /* --------------------------------------------------------------------------
-   Responsive — Home (≤ 768px)
+   Scroll-More Button (Botón "Más")
    -------------------------------------------------------------------------- */
 
-@media (max-width: 768px) {
+.scroll-more {
+  text-align: center;
+  padding-block: var(--spacing-md);
+}
+
+.scroll-more__btn {
+  background: none;
+  border: none;
+  color: var(--color-accent);
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  cursor: pointer;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.scroll-more__btn:hover,
+.scroll-more__btn:focus {
+  color: var(--color-text);
+  transform: translateY(2px);
+}
+
+.scroll-more__btn:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.scroll-more__text,
+.scroll-more__icon {
+  display: block;
+}
+
+/* --------------------------------------------------------------------------
+   Responsive — Home (Desktop: > 768px)
+   -------------------------------------------------------------------------- */
+
+@media (min-width: 769px) {
   .hero {
-    min-height: 60vh;
-    padding: var(--spacing-lg) var(--spacing-sm);
+    min-height: calc(100vh - var(--nav-height));
+    padding: var(--spacing-xl) var(--spacing-sm);
   }
 
   .hero__title {
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-hero);
   }
 
   .hero__tagline {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-xl);
   }
 
-  .description__text,
-  .about__text {
-    font-size: var(--font-size-base);
+  .description__text {
+    font-size: var(--font-size-lg);
   }
 
   .services-preview,
   .contents-preview,
   .about {
-    padding-block: var(--spacing-md);
-  }
-
-  .cta {
     padding-block: var(--spacing-lg);
   }
 
+  .cta {
+    padding-block: var(--spacing-xl);
+  }
+
   .cta__heading {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-xl);
   }
 }

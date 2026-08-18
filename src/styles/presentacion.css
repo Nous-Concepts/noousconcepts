@@ -1,0 +1,56 @@
+/* ==========================================================================
+   Presentación Page Styles — NOUS CONCEPTS
+   Styles for the presentation/about page with mobile-first approach.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Main Container
+   -------------------------------------------------------------------------- */
+
+.presentacion {
+  padding-top: var(--nav-height);
+  min-height: 100vh;
+  padding-inline: var(--spacing-sm);
+}
+
+/* --------------------------------------------------------------------------
+   Title
+   -------------------------------------------------------------------------- */
+
+.presentacion__title {
+  text-align: right;
+  font-family: var(--font-heading);
+  color: var(--color-text);
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-md);
+}
+
+/* --------------------------------------------------------------------------
+   Content Section
+   -------------------------------------------------------------------------- */
+
+.presentacion__content {
+  max-width: 720px;
+  margin-inline: auto;
+  line-height: 1.7;
+  color: var(--color-text);
+  font-size: var(--font-size-base);
+}
+
+.presentacion__content p {
+  margin-bottom: var(--spacing-sm);
+}
+
+/* --------------------------------------------------------------------------
+   Responsive — Presentación (Desktop: > 768px)
+   -------------------------------------------------------------------------- */
+
+@media (min-width: 769px) {
+  .presentacion__title {
+    font-size: var(--font-size-hero);
+  }
+
+  .presentacion__content {
+    font-size: var(--font-size-lg);
+  }
+}

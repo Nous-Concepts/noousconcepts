@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach } from 'vitest';
-import { getPageNameFromPath, setActivePage, toggleMobileMenu, initNavigation } from './nav.js';
+import { getPageNameFromPath, setActivePage, toggleMobileMenu, initNavigation, listenMenuToggleEvent } from './nav.js';
 
 describe('nav.js', () => {
   describe('getPageNameFromPath', () => {
@@ -164,6 +164,77 @@ describe('nav.js', () => {
       initNavigation();
       const homeLink = document.querySelector('[data-page="home"]');
       expect(homeLink.classList.contains('nav-link--active')).toBe(true);
+    });
+  });
+
+  describe('listenMenuToggleEvent', () => {
+    beforeEach(() => {
+      document.body.innerHTML = `
+        <button class="site-header__menu-btn" type="button">Menu</button>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menú">
+          <span class="nav-toggle-icon"></span>
+        </button>
+        <ul id="nav-menu" class="nav-links">
+          <li><a href="home.html" data-page="home">Inicio</a></li>
+          <li><a href="contenidos.html" data-page="contenidos">Contenidos</a></li>
+        </ul>
+      `;
+      listenMenuToggleEvent();
+    });
+
+    it('adds is-open class and sets aria-expanded to true on menu-toggle open event', () => {
+      document.dispatchEvent(new CustomEvent('menu-toggle', { detail: { state: 'open' } }));
+
+      const navMenu = document.getElementById('nav-menu');
+      const navToggle = document.querySelector('.nav-toggle');
+
+      expect(navMenu.classList.contains('is-open')).toBe(true);
+      expect(navToggle.getAttribute('aria-expanded')).toBe('true');
+    });
+
+    it('removes is-open class and sets aria-expanded to false on menu-toggle close event', () => {
+      // First open the menu
+      document.dispatchEvent(new CustomEvent('menu-toggle', { detail: { state: 'open' } }));
+      // Then close it
+      document.dispatchEvent(new CustomEvent('menu-toggle', { detail: { state: 'close' } }));
+
+      const navMenu = document.getElementById('nav-menu');
+      const navToggle = document.querySelector('.nav-toggle');
+
+      expect(navMenu.classList.contains('is-open')).toBe(false);
+      expect(navToggle.getAttribute('aria-expanded')).toBe('false');
+    });
+
+    it('moves focus to .site-header__menu-btn when closing and active element is inside nav-menu', () => {
+      // Open the menu first
+      document.dispatchEvent(new CustomEvent('menu-toggle', { detail: { state: 'open' } }));
+
+      // Focus an element inside nav-menu
+      const linkInsideMenu = document.querySelector('#nav-menu a');
+      linkInsideMenu.focus();
+      expect(document.activeElement).toBe(linkInsideMenu);
+
+      // Close the menu
+      document.dispatchEvent(new CustomEvent('menu-toggle', { detail: { state: 'close' } }));
+
+      const headerMenuBtn = document.querySelector('.site-header__menu-btn');
+      expect(document.activeElement).toBe(headerMenuBtn);
+    });
+
+    it('does not change focus when closing and active element is NOT inside nav-menu', () => {
+      // Open the menu first
+      document.dispatchEvent(new CustomEvent('menu-toggle', { detail: { state: 'open' } }));
+
+      // Focus the header menu button (outside nav-menu)
+      const headerMenuBtn = document.querySelector('.site-header__menu-btn');
+      headerMenuBtn.focus();
+      expect(document.activeElement).toBe(headerMenuBtn);
+
+      // Close the menu
+      document.dispatchEvent(new CustomEvent('menu-toggle', { detail: { state: 'close' } }));
+
+      // Focus should remain on the header menu button (unchanged)
+      expect(document.activeElement).toBe(headerMenuBtn);
     });
   });
 });

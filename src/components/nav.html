@@ -6,8 +6,35 @@
     <span class="nav-toggle-icon"></span>
   </button>
   <ul id="nav-menu" class="nav-links" role="menubar">
-    <li role="none"><a href="home.html" role="menuitem" data-page="home">Inicio</a></li>
-    <li role="none"><a href="contenidos.html" role="menuitem" data-page="contenidos">Contenidos Originales</a></li>
+    <div class="nav-overlay-header">
+      <span class="nav-overlay-logo">NOUS CONCEPTS</span>
+      <button class="nav-close-btn" type="button" aria-label="Cerrar menú">
+        <span class="nav-close-icon" aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <li role="none"><a href="presentacion.html" role="menuitem" data-page="presentacion">PRESENTACIÓN</a></li>
+    <li class="nav-accordion-item" role="none">
+      <button class="nav-accordion-toggle" type="button" aria-expanded="false" aria-controls="submenu-entretenimiento">ENTRETENIMIENTO <span class="nav-accordion-chevron" aria-hidden="true">›</span></button>
+      <ul id="submenu-entretenimiento" class="nav-submenu" role="menu">
+        <li role="none"><a href="contenidos.html#neo-samania" role="menuitem">Neo Samanía Conexión</a></li>
+        <li role="none"><a href="contenidos.html#ultima-funcion" role="menuitem">La Última Función</a></li>
+        <li role="none"><a href="contenidos.html#panico-disforico" role="menuitem">Pánico Disfórico</a></li>
+        <li role="none"><a href="contenidos.html#colombia-mix" role="menuitem">Colombia Mix</a></li>
+        <li role="none"><a href="contenidos.html#carnaval-distopico" role="menuitem">Carnaval Distópico</a></li>
+      </ul>
+    </li>
+    <li class="nav-accordion-item" role="none">
+      <button class="nav-accordion-toggle" type="button" aria-expanded="false" aria-controls="submenu-educacion">EDUCACIÓN <span class="nav-accordion-chevron" aria-hidden="true">›</span></button>
+      <ul id="submenu-educacion" class="nav-submenu" role="menu">
+        <li role="none"><a href="contenidos.html#el-combo" role="menuitem">El Combo</a></li>
+        <li role="none"><a href="contenidos.html#naranja-digital" role="menuitem">Naranja Digital</a></li>
+      </ul>
+    </li>
+    <li role="none"><a href="contenidos.html#gde" role="menuitem" data-page="gde">GDE</a></li>
+    <li role="none"><a href="contenidos.html#rse" role="menuitem" data-page="rse">RSE</a></li>
+    <li role="none"><a href="contenidos.html#i-d" role="menuitem" data-page="i-d">I+D</a></li>
+    <li role="none"><a href="contenidos.html#siruma" role="menuitem" data-page="siruma">SIRUMA</a></li>
     <li role="none"><a href="servicios.html" role="menuitem" data-page="servicios">Servicios</a></li>
+    <li role="none"><a href="home.html#quienes-somos" role="menuitem" data-page="quienes-somos">¿Quienes Somos?</a></li>
   </ul>
 </nav>
