@@ -1,0 +1,76 @@
+/* ==========================================================================
+   Neo Samaria Conexión — Page Styles
+   Mobile-first. Uses design tokens from variables.css.
+   ========================================================================== */
+
+/* Background fallback in case variables.css fails to load.
+   This is the ONLY literal color permitted (as a var() fallback). */
+body {
+  background-color: var(--color-bg, #0f0f1a);
+}
+
+/* --------------------------------------------------------------------------
+   Base styles (mobile-first, ≤768px)
+   -------------------------------------------------------------------------- */
+
+.neo-samaria {
+  /* Offset for fixed header: --nav-height (64px) + --spacing-md (32px) ≥ 96px */
+  padding-top: 96px;
+  padding-inline: var(--spacing-sm);
+}
+
+.neo-samaria__title {
+  text-align: center;
+  font-family: var(--font-heading);
+  color: var(--color-text);
+  font-size: var(--font-size-xl);
+}
+
+.neo-samaria__synopsis {
+  max-width: 720px;
+  margin-inline: auto;
+  line-height: 1.7;
+  text-align: left;
+  color: var(--color-text);
+  font-size: var(--font-size-base);
+  padding-top: var(--spacing-md);
+  padding-bottom: var(--spacing-md);
+}
+
+.neo-samaria__images {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  max-width: 720px;
+  margin-inline: auto;
+}
+
+.neo-samaria__image-wrapper {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+
+.neo-samaria__image-wrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+}
+
+/* --------------------------------------------------------------------------
+   Responsive styles (>768px) — single breakpoint, mobile-first min-width
+   -------------------------------------------------------------------------- */
+
+@media (min-width: 769px) {
+  .neo-samaria {
+    padding-inline: var(--spacing-md);
+  }
+
+  .neo-samaria__title {
+    font-size: var(--font-size-hero);
+  }
+
+  .neo-samaria__synopsis {
+    font-size: var(--font-size-lg);
+  }
+}
