@@ -77,10 +77,14 @@
   top: 7px;
 }
 
+/* Nav links — base (shared across all breakpoints) */
 .nav-links {
   display: flex;
   align-items: center;
   gap: var(--spacing-md);
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links a {
@@ -88,6 +92,8 @@
   font-size: var(--font-size-base);
   padding: var(--spacing-xs);
   transition: color 0.2s ease;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 .nav-links a:hover,
@@ -100,14 +106,251 @@
   border-bottom: 2px solid var(--color-accent);
 }
 
-/* Overlay-only elements are hidden by default (desktop). They are revealed
-   inside the mobile fullscreen overlay via the ≤ 768px media query below. */
+/* Overlay-only elements are hidden by default (desktop/tablet). They are
+   revealed inside the mobile fullscreen overlay via the mobile media query. */
 .nav-overlay-header,
 .nav-close-btn {
   display: none;
 }
 
-/* Navigation — Responsive (≤ 768px): fullscreen dark overlay */
+/* Accordion & submenu — hidden on desktop by default */
+.nav-accordion-toggle {
+  display: none;
+}
+
+.nav-submenu {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ==========================================================================
+   Desktop (≥ 1025px): horizontal bar, all links visible, no hamburger
+   ========================================================================== */
+@media (min-width: 1025px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-sm);
+  }
+
+  .nav-links li {
+    position: relative;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
+    padding: var(--spacing-xs) 0.4rem;
+  }
+
+  /* Accordion items on desktop: show toggle as inline link-style text */
+  .nav-accordion-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: var(--spacing-xs) 0.4rem;
+    font-size: 0.85rem;
+    font-family: inherit;
+    color: var(--color-text-muted);
+    background: none;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: color 0.2s ease;
+  }
+
+  .nav-accordion-toggle:hover,
+  .nav-accordion-toggle:focus {
+    color: var(--color-text);
+  }
+
+  .nav-accordion-chevron {
+    display: inline-block;
+    font-size: 0.75rem;
+    transition: transform 0.3s ease;
+  }
+
+  .nav-accordion-item.is-expanded .nav-accordion-chevron {
+    transform: rotate(90deg);
+  }
+
+  /* Dropdown submenu on desktop */
+  .nav-accordion-item.is-expanded .nav-submenu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    background-color: var(--color-secondary);
+    border-radius: 4px;
+    padding: var(--spacing-xs) 0;
+    z-index: 1001;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  }
+
+  .nav-submenu li a {
+    display: block;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    white-space: nowrap;
+    text-align: left;
+  }
+
+  .nav-submenu li a:hover,
+  .nav-submenu li a:focus {
+    color: var(--color-accent);
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+}
+
+/* ==========================================================================
+   iPad / Tablet (769px – 1024px): fullscreen overlay, same as mobile but
+   with slightly larger touch targets and two-column submenu option
+   ========================================================================== */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .nav-toggle {
+    display: flex;
+  }
+
+  /* Fullscreen overlay */
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    background-color: var(--color-bg);
+    padding: var(--spacing-lg) var(--spacing-md);
+    gap: 0;
+    z-index: 9999;
+    display: none;
+  }
+
+  .nav-links.is-open {
+    display: flex;
+  }
+
+  /* Overlay header */
+  .nav-overlay-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-bottom: 1px solid var(--color-secondary);
+  }
+
+  .nav-overlay-logo {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    color: var(--color-text);
+  }
+
+  .nav-close-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    padding: var(--spacing-xs);
+    background: none;
+    border: none;
+    color: var(--color-text);
+    cursor: pointer;
+  }
+
+  .nav-close-icon {
+    font-size: var(--font-size-xl);
+    line-height: 1;
+    color: var(--color-text);
+  }
+
+  .nav-close-btn:hover .nav-close-icon,
+  .nav-close-btn:focus .nav-close-icon {
+    color: var(--color-accent);
+  }
+
+  /* Links inside overlay */
+  .nav-links li {
+    text-align: center;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 0.75rem var(--spacing-sm);
+    font-size: var(--font-size-lg);
+    text-align: center;
+  }
+
+  /* Accordion toggle for tablet */
+  .nav-accordion-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-xs);
+    width: 100%;
+    padding: 0.75rem var(--spacing-sm);
+    font-size: var(--font-size-lg);
+    font-family: inherit;
+    color: var(--color-text-muted);
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: color 0.2s ease;
+  }
+
+  .nav-accordion-toggle:hover,
+  .nav-accordion-toggle:focus {
+    color: var(--color-text);
+  }
+
+  .nav-accordion-chevron {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    font-size: var(--font-size-base);
+  }
+
+  .nav-accordion-item.is-expanded .nav-accordion-chevron {
+    transform: rotate(90deg);
+  }
+
+  .nav-accordion-item.is-expanded .nav-submenu {
+    display: block;
+  }
+
+  .nav-submenu li a {
+    display: block;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: var(--font-size-base);
+    color: var(--color-text-muted);
+    text-align: center;
+    transition: color 0.2s ease;
+  }
+
+  .nav-submenu li a:hover,
+  .nav-submenu li a:focus {
+    color: var(--color-accent);
+  }
+}
+
+/* ==========================================================================
+   Mobile (≤ 768px): fullscreen dark overlay, centered vertical links
+   ========================================================================== */
 @media (max-width: 768px) {
   .nav-toggle {
     display: flex;
@@ -223,13 +466,6 @@
 
   .nav-accordion-item.is-expanded .nav-accordion-chevron {
     transform: rotate(90deg);
-  }
-
-  .nav-submenu {
-    display: none;
-    list-style: none;
-    padding: 0;
-    margin: 0;
   }
 
   .nav-accordion-item.is-expanded .nav-submenu {
@@ -444,7 +680,7 @@ body {
 }
 
 /* Site Header — Responsive */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .site-header__menu-btn {
     display: flex;
   }
@@ -454,7 +690,7 @@ body {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1025px) {
   .site-header__menu-btn {
     display: none;
   }
@@ -462,6 +698,6 @@ body {
   .site-header .nav-links {
     display: flex;
     align-items: center;
-    gap: var(--spacing-md);
+    gap: var(--spacing-sm);
   }
 }
