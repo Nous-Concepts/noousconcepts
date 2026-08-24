@@ -5,12 +5,79 @@
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
-   Body — Dark mode is the default theme
+   Home theme — "Identidad visual clara" (cream + navy/indigo)
+
+   The site-wide tokens (variables.css) define a dark theme shared by every
+   page. The featured home mockup uses a light identity: cream/ivory background
+   with a deep navy/indigo accent, white cards and serif display headings.
+   Because home.css is loaded exclusively by home.html, we override the design
+   tokens at the body scope so the light theme applies to the home page only
+   (header, nav overlay, footer and the featured section all inherit it) while
+   the rest of the site keeps the dark theme untouched.
    -------------------------------------------------------------------------- */
 
 body {
+  --color-bg: #f5f1ea;        /* cream / ivory background */
+  --color-surface: #ffffff;   /* white card surface */
+  --color-primary: #f5f1ea;   /* header / footer bar background */
+  --color-secondary: #e8e2d7; /* warm hairlines, skeletons, social chips */
+  --color-accent: #2d2b6b;    /* deep navy / indigo accent */
+  --color-text: #211f42;      /* near-navy body text */
+  --color-text-muted: #6c6c75;/* muted grey for excerpts / metadata */
+
+  /* Serif display for headings (falls back gracefully if the custom face is
+     unavailable), matching the mockup's editorial title style. */
+  --font-heading: 'CustomHeading', Georgia, 'Times New Roman', serif;
+
   background-color: var(--color-bg);
   color: var(--color-text);
+}
+
+/* --------------------------------------------------------------------------
+   Top bar — single clean cream header with a circular menu button
+
+   The home page renders both the site-header and the main-nav bar (the latter
+   also hosts the fullscreen overlay menu). Under the light theme both bars are
+   cream and overlap exactly, reading as one bar. We add a hairline divider and
+   turn the hamburger into the rounded button shown in the mockup.
+   -------------------------------------------------------------------------- */
+
+.site-header,
+.main-nav {
+  background-color: var(--color-bg);
+  border-bottom: 1px solid var(--color-secondary);
+}
+
+.site-header__logo,
+.nav-brand a {
+  color: var(--color-text);
+}
+
+.site-header__menu-btn,
+.main-nav .nav-toggle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-secondary);
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.site-header__menu-btn:hover,
+.site-header__menu-btn:focus-visible,
+.main-nav .nav-toggle:hover,
+.main-nav .nav-toggle:focus-visible {
+  background-color: var(--color-bg);
+  border-color: var(--color-accent);
+}
+
+.site-header__menu-icon,
+.site-header__menu-icon::before,
+.site-header__menu-icon::after,
+.nav-toggle-icon,
+.nav-toggle-icon::before,
+.nav-toggle-icon::after {
+  background-color: var(--color-text);
 }
 
 /* --------------------------------------------------------------------------

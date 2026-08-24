@@ -1,5 +1,10 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { loadComponent, initPage } from './main.js';
+import { loadComponent, initPage, BLOG_API_URL } from './main.js';
+
+/** Flushes pending microtasks so fire-and-forget promises can settle. */
+function flushPromises() {
+  return new Promise((resolve) => setTimeout(resolve, 0));
+}
 
 describe('main.js - Component Loader', () => {
   beforeEach(() => {
@@ -181,6 +186,92 @@ describe('main.js - Component Loader', () => {
       const navPlaceholder = document.getElementById('nav-placeholder');
       expect(navPlaceholder.querySelector('.main-nav')).not.toBeNull();
       expect(document.getElementById('footer-placeholder').innerHTML).toBe(footerHtml);
+    });
+  });
+
+  describe('featured cards integration', () => {
+    const blogPosts = [
+      {
+        title: 'Primer estreno',
+        featured_image: 'https://cdn.nousconcepts.com/a.jpg',
+        category: 'CINE',
+        reading_time: 5,
+        excerpt: 'Un relato que late.',
+        permalink: 'https://blog.nousconcepts.com/a',
+      },
+      {
+        title: 'Segundo estreno',
+        featured_image: 'https://cdn.nousconcepts.com/b.jpg',
+        category: 'SERIE',
+        reading_time: 8,
+        excerpt: 'Otra historia.',
+        permalink: 'https://blog.nousconcepts.com/b',
+      },
+    ];
+
+    function mockComponentsAnd(blogHandler) {
+      global.fetch = vi.fn().mockImplementation((url) => {
+        if (url.includes('.html')) {
+          return Promise.resolve({ ok: true, text: () => Promise.resolve('<div></div>') });
+        }
+        return blogHandler(url);
+      });
+    }
+
+    it('should render blog cards into the .featured__cards container after initPage', async () => {
+      document.body.innerHTML = `
+        <div id="header-placeholder"></div>
+        <div id="nav-placeholder"></div>
+        <div id="footer-placeholder"></div>
+        <section class="featured">
+          <span class="featured__label">ESTRENOS DESTACADOS</span>
+          <h2 class="featured__title">Cultura, relatos e historias que laten</h2>
+          <div class="featured__cards" aria-live="polite"></div>
+          <a class="featured__cta" href="contenidos.html">Más Contenido →</a>
+        </section>
+      `;
+
+      mockComponentsAnd(() =>
+        Promise.resolve({ ok: true, json: () => Promise.resolve(blogPosts) })
+      );
+
+      await initPage();
+      await flushPromises();
+
+      const cards = document.querySelectorAll('.featured__cards .featured-card');
+      expect(cards.length).toBe(2);
+      // The blog API was requested using the configured URL.
+      expect(global.fetch).toHaveBeenCalledWith(BLOG_API_URL, expect.any(Object));
+      // Each card link is a native anchor (Tab-reachable, Enter-activated).
+      const links = document.querySelectorAll('.featured__cards a.featured-card__link');
+      expect(links.length).toBe(2);
+    });
+
+    it('should keep label, title and CTA visible and show error state when the blog API fails', async () => {
+      vi.spyOn(console, 'error').mockImplementation(() => {});
+      document.body.innerHTML = `
+        <div id="header-placeholder"></div>
+        <div id="nav-placeholder"></div>
+        <div id="footer-placeholder"></div>
+        <section class="featured">
+          <span class="featured__label">ESTRENOS DESTACADOS</span>
+          <h2 class="featured__title">Cultura, relatos e historias que laten</h2>
+          <div class="featured__cards" aria-live="polite"></div>
+          <a class="featured__cta" href="contenidos.html">Más Contenido →</a>
+        </section>
+      `;
+
+      mockComponentsAnd(() => Promise.reject(new Error('Network error')));
+
+      await initPage();
+      await flushPromises();
+
+      // Static structure stays visible (Req 5.4).
+      expect(document.querySelector('.featured__label')).not.toBeNull();
+      expect(document.querySelector('.featured__title')).not.toBeNull();
+      expect(document.querySelector('.featured__cta')).not.toBeNull();
+      // Error state replaces the cards container content.
+      expect(document.querySelector('.featured__error')).not.toBeNull();
     });
   });
 });

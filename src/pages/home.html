@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../styles/main.css" />
   <link rel="stylesheet" href="../styles/components.css" />
   <link rel="stylesheet" href="../styles/home.css" />
+  <link rel="stylesheet" href="../styles/featured-cards.css" />
 </head>
 <body>
   <!-- Header -->
@@ -18,97 +19,20 @@
   <div id="nav-placeholder"></div>
 
   <main>
-    <!-- Hero Section -->
-    <section class="hero" aria-label="Sección principal de Nous Concepts">
-      <img class="hero__banner" src="../assets/images/home/hero-banner.jpg" alt="NOUS CONCEPTS" />
-      <div class="hero__content">
-        <h1 class="hero__title">NOUS &squf;</h1>
-        <p class="hero__tagline">Un universo de fantasías y realidades</p>
+    <!-- Featured Blog Cards Section -->
+    <section class="featured" aria-label="Estrenos destacados del blog">
+      <span class="featured__label">ESTRENOS DESTACADOS</span>
+      <h2 class="featured__title">Cultura, relatos e historias que laten</h2>
+      <div class="featured__cards" aria-live="polite">
+        <!-- Tarjetas renderizadas dinámicamente por featured-cards.js -->
       </div>
-    </section>
-
-    <!-- Scroll More Button (Hero → Description) -->
-    <div class="scroll-more" aria-hidden="false">
-      <button class="scroll-more__btn" type="button" aria-label="Ir a la sección Descripción del estudio">
-        <span class="scroll-more__text">Más</span>
-        <span class="scroll-more__icon" aria-hidden="true">▼</span>
-      </button>
-    </div>
-
-    <!-- Studio Description Section -->
-    <section class="description" aria-label="Descripción del estudio">
-      <p class="description__text">
-        Somos una fábrica de ideas y conceptos creativos nacida en el Caribe colombiano. En NOUS CONCEPTS transformamos historias en experiencias visuales a través del cómic, la animación y el video. Nuestro equipo combina narrativa, arte y tecnología para dar vida a universos originales que educan, entretienen e inspiran. Creemos en el poder de contar historias que conecten con las personas y dejen huella en la cultura.
-      </p>
-    </section>
-
-    <div class="scroll-more" aria-hidden="false">
-      <button class="scroll-more__btn" type="button" aria-label="Ir a la sección Servicios">
-        <span class="scroll-more__text">Más</span>
-        <span class="scroll-more__icon" aria-hidden="true">▼</span>
-      </button>
-    </div>
-
-    <!-- Services Preview Section -->
-    <section class="services-preview" aria-label="Servicios">
-      <h2 class="services-preview__heading">Servicios</h2>
-      <p class="services-preview__text">
-        Ofrecemos soluciones creativas en narración gráfica y animación 2D. Desde storyboards y cómics hasta producciones animadas educativas, publicitarias e institucionales, convertimos tus ideas en historias visuales memorables.
-      </p>
-      <a class="services-preview__link" href="servicios.html">Conoce nuestros servicios →</a>
-    </section>
-
-    <div class="scroll-more" aria-hidden="false">
-      <button class="scroll-more__btn" type="button" aria-label="Ir a la sección Contenidos Originales">
-        <span class="scroll-more__text">Más</span>
-        <span class="scroll-more__icon" aria-hidden="true">▼</span>
-      </button>
-    </div>
-
-    <!-- Original Contents Section -->
-    <section class="contents-preview" aria-label="Contenidos originales">
-      <h2 class="contents-preview__heading">Contenidos Originales</h2>
-      <p class="contents-preview__text">
-        Creamos universos propios a través de series, cómics y proyectos transmedia que exploran géneros como la ciencia ficción, el horror, la comedia social y la educación animada.
-      </p>
-      <a class="contents-preview__link" href="contenidos.html">Explora nuestros contenidos →</a>
-    </section>
-
-    <div class="scroll-more" aria-hidden="false">
-      <button class="scroll-more__btn" type="button" aria-label="Ir a la sección Sobre Nosotros">
-        <span class="scroll-more__text">Más</span>
-        <span class="scroll-more__icon" aria-hidden="true">▼</span>
-      </button>
-    </div>
-
-    <!-- About Section (Sobre Nosotros) -->
-    <section class="about" aria-label="Sobre Nosotros">
-      <h2 class="about__heading">Sobre Nosotros</h2>
-      <p class="about__text">
-        NOUS CONCEPTS nace del Átomo Nous, la chispa creativa que impulsa cada proyecto que emprendemos. Somos un estudio creativo del Caribe colombiano dedicado a la producción de contenidos originales en cómic, animación y video. Nuestra filosofía se fundamenta en la exploración constante de nuevas formas de contar historias, fusionando la tradición narrativa con las herramientas digitales contemporáneas. Cada proyecto que desarrollamos parte de ese núcleo creativo —el Átomo Nous— que nos permite transformar conceptos en universos visuales con identidad propia, conectando audiencias a través de relatos que inspiran, educan y entretienen.
-      </p>
-    </section>
-
-    <div class="scroll-more" aria-hidden="false">
-      <button class="scroll-more__btn" type="button" aria-label="Ir a la sección Contacto">
-        <span class="scroll-more__text">Más</span>
-        <span class="scroll-more__icon" aria-hidden="true">▼</span>
-      </button>
-    </div>
-
-    <!-- Contact CTA Section -->
-    <section class="cta" aria-label="Contacto">
-      <h2 class="cta__heading">¿Tienes una idea?</h2>
-      <p class="cta__text">Contáctanos y haremos realidad tus ideas.</p>
-      <a class="cta__button" href="mailto:contacto@nousconcepts.com">Contáctanos</a>
+      <a class="featured__cta" href="contenidos.html">Más Contenido →</a>
     </section>
   </main>
 
   <!-- Social Media Links -->
   <aside class="social-links" aria-label="Redes sociales">
-    <a href="https://instagram.com/nousconcepts" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
-    <a href="https://youtube.com/@nousconcepts" target="_blank" rel="noopener noreferrer" aria-label="YouTube">YouTube</a>
-    <a href="https://facebook.com/nousconcepts" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
+
   </aside>
 
   <!-- Footer -->

@@ -1,0 +1,314 @@
+/* ==========================================================================
+   Featured Blog Cards — NOUS CONCEPTS
+   Estilos de la sección "Estrenos Destacados" de la Pantalla_Home.
+   Convención BEM, mobile-first (base ≤ 768px), tokens de diseño centralizados.
+   Diseño basado en el mockup móvil: fondo crema, acento navy/índigo, títulos
+   serif, tarjetas blancas de esquinas redondeadas y CTA tipo píldora.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Bloque: .featured (contenedor de sección)
+   Base mobile-first. Etiqueta y título alineados a la izquierda; CTA centrado.
+   -------------------------------------------------------------------------- */
+
+.featured {
+  width: 100%;
+  max-width: 680px;
+  margin-inline: auto;
+  padding: var(--spacing-md) var(--spacing-sm) var(--spacing-lg);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  text-align: left;
+}
+
+/* Etiqueta superior — mayúsculas, bold, navy, letter-spacing notable */
+.featured__label {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: var(--spacing-xs);
+}
+
+/* Título de sección (h2) — display serif, navy, line-height generoso */
+.featured__title {
+  font-family: var(--font-heading);
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.12;
+  color: var(--color-accent);
+  margin-bottom: var(--spacing-md);
+}
+
+/* Contenedor de tarjetas — una columna en móvil con gap generoso */
+.featured__cards {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+/* --------------------------------------------------------------------------
+   Bloque: .featured-card (tarjeta individual)
+   Superficie blanca, esquinas redondeadas, imagen superior + cuerpo con padding.
+   -------------------------------------------------------------------------- */
+
+.featured-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(33, 31, 66, 0.05), 0 10px 28px rgba(33, 31, 66, 0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.featured-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(33, 31, 66, 0.08), 0 18px 36px rgba(33, 31, 66, 0.12);
+}
+
+/* Imagen superior a ancho completo, aspect-ratio fijo, object-fit cover */
+.featured-card__image {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+/* Área de contenido con padding interior */
+.featured-card__body {
+  padding: var(--spacing-sm) var(--spacing-sm) var(--spacing-md);
+}
+
+/* Línea de metadatos: "CINE • 5 min de lectura" en la misma línea.
+   La categoría y el tiempo de lectura son spans en línea; la viñeta se genera
+   antes del tiempo de lectura, de modo que cuando este se omite (readingTime
+   null) tampoco aparece el separador. */
+.featured-card__category {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.featured-card__reading-time {
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+}
+
+.featured-card__reading-time::before {
+  content: "•";
+  margin: 0 0.5em;
+  color: var(--color-text-muted);
+}
+
+/* Título de la tarjeta — serif, navy, admite 2 líneas */
+.featured-card__heading {
+  font-family: var(--font-heading);
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--color-accent);
+  margin-top: var(--spacing-xs);
+}
+
+/* Extracto opcional — texto atenuado */
+.featured-card__description {
+  margin-top: var(--spacing-xs);
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: var(--color-text-muted);
+}
+
+/* Enlace de la tarjeta: cubre toda la superficie (patrón "stretched link")
+   para que la tarjeta completa sea navegable, como en el mockup (sin texto
+   visible "Leer más"). El nombre accesible viaja en el aria-label del enlace. */
+.featured-card__link {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  font-size: 0;
+  color: transparent;
+}
+
+.featured-card__link:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* --------------------------------------------------------------------------
+   Botón "Más Contenido" — píldora navy centrada, área táctil ≥ 44×44
+   -------------------------------------------------------------------------- */
+
+.featured__cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: max-content;
+  max-width: 100%;
+  margin-inline: auto;
+  min-height: 44px;
+  padding: 0.9rem 2rem;
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  border-radius: 999px;
+  transition: transform 0.1s ease, filter 0.2s ease;
+}
+
+.featured__cta:hover,
+.featured__cta:focus {
+  color: var(--color-bg);
+  filter: brightness(1.12);
+  transform: translateY(-1px);
+}
+
+.featured__cta:active {
+  transform: translateY(0);
+}
+
+.featured__cta:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* --------------------------------------------------------------------------
+   Estado de carga (skeleton animado)
+   Clases generadas por renderLoadingState(): .featured__loading,
+   .featured__loading-text, .featured__skeleton(-image|-line[--short|--long]).
+   -------------------------------------------------------------------------- */
+
+.featured__loading {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+/* Texto de carga: anunciado a lectores de pantalla pero oculto visualmente */
+.featured__loading-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.featured__skeleton {
+  background-color: var(--color-surface);
+  border-radius: 16px;
+  overflow: hidden;
+  padding-bottom: var(--spacing-md);
+  box-shadow: 0 1px 2px rgba(33, 31, 66, 0.05), 0 10px 28px rgba(33, 31, 66, 0.07);
+}
+
+.featured__skeleton-image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+}
+
+.featured__skeleton-line {
+  height: 0.9rem;
+  margin: var(--spacing-sm) var(--spacing-sm) 0;
+  border-radius: 4px;
+}
+
+.featured__skeleton-line--short {
+  width: 40%;
+}
+
+.featured__skeleton-line--long {
+  width: 80%;
+}
+
+.featured__skeleton-image,
+.featured__skeleton-line {
+  background: linear-gradient(
+    90deg,
+    var(--color-secondary) 25%,
+    #f2eee6 37%,
+    var(--color-secondary) 63%
+  );
+  background-size: 400% 100%;
+  animation: featured-skeleton 1.4s ease-in-out infinite;
+}
+
+@keyframes featured-skeleton {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/* Respeta preferencias de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+  .featured__skeleton-image,
+  .featured__skeleton-line {
+    animation: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Estado de error
+   -------------------------------------------------------------------------- */
+
+.featured__error {
+  padding: var(--spacing-md);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-secondary);
+  border-radius: 16px;
+}
+
+.featured__error-message {
+  color: var(--color-text);
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Responsive — Tablet / desktop (> 768px): dos columnas (Req 8.2)
+   -------------------------------------------------------------------------- */
+
+@media (min-width: 769px) {
+  .featured {
+    max-width: 1000px;
+    padding-block: var(--spacing-lg);
+  }
+
+  .featured__title {
+    font-size: 2.75rem;
+  }
+
+  .featured__cards,
+  .featured__loading {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .featured__cards > .featured-card,
+  .featured__loading > .featured__skeleton {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+}

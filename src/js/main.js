@@ -6,6 +6,15 @@
 import { initHeader } from './header.js';
 import { initNavigation } from './nav.js';
 import { initScrollMoreButtons } from './scroll-more.js';
+import { initFeaturedCards } from './featured-cards.js';
+
+/**
+ * Blog API endpoint used to populate the "Estrenos Destacados" section.
+ * Configured here as a single source of truth so it can be adjusted for
+ * different environments (staging, production) without touching component code.
+ * @type {string}
+ */
+const BLOG_API_URL = 'https://blog.nousconcepts.com/wp-json/wp/v2/posts?_embed';
 
 /**
  * Loads an HTML fragment from componentPath and inserts it into the element
@@ -45,9 +54,14 @@ async function initPage() {
   initHeader();
   initNavigation();
   initScrollMoreButtons();
+
+  // Populate the "Estrenos Destacados" section from the blog API. This is
+  // self-contained: it manages its own loading/error states and never throws,
+  // so a blog outage cannot break the rest of the page.
+  initFeaturedCards({ apiUrl: BLOG_API_URL });
 }
 
 // Auto-initialize when DOM is ready
 document.addEventListener('DOMContentLoaded', initPage);
 
-export { loadComponent, initPage };
+export { loadComponent, initPage, BLOG_API_URL };
