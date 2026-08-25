@@ -118,7 +118,9 @@ export function renderCard(post) {
     url +
     '" aria-label="Leer el artículo: ' +
     title +
-    '">Leer más</a>' +
+    '"><span class="visually-hidden">Leer el artículo: ' +
+    title +
+    '</span></a>' +
     '</div>' +
     '</article>'
   );

@@ -1,0 +1,159 @@
+/* ==========================================================================
+   Pánico Disfórico — Page Styles
+   Mobile-first. Uses design tokens from variables.css.
+   Light theme variant for content page.
+   ========================================================================== */
+
+/* Background fallback in case variables.css fails to load.
+   This is the ONLY literal color permitted (as a var() fallback).
+   Light theme background: #f5f5f5 */
+body {
+  background-color: #f5f5f5;
+}
+
+/* --------------------------------------------------------------------------
+   Base styles (mobile-first, ≤768px)
+   -------------------------------------------------------------------------- */
+
+.panico-disforico {
+  padding-top: 96px;
+  padding-inline: var(--spacing-sm);
+  padding-bottom: 72px;
+}
+
+.panico-disforico__content {
+  max-width: 720px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.panico-disforico__label {
+  color: #6b7280;
+  font-size: var(--font-size-sm, 0.75rem);
+  letter-spacing: 0.1em;
+}
+
+.panico-disforico__title {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-xl);
+  color: #1f2937;
+  margin: 0;
+}
+
+.panico-disforico__description {
+  color: #6b7280;
+  line-height: 1.6;
+  font-size: var(--font-size-base);
+  margin: 0;
+}
+
+.panico-disforico__hero-wrapper {
+  width: 100%;
+}
+
+.panico-disforico__hero {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.panico-disforico__cta {
+  background-color: #1e3a5f;
+  color: #ffffff;
+  border-radius: 24px;
+  padding: var(--spacing-xs) var(--spacing-md);
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  align-self: center;
+}
+
+.panico-disforico__cta:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* --------------------------------------------------------------------------
+   Tab Bar Styles
+   -------------------------------------------------------------------------- */
+
+.tab-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+  border-top: 1px solid #e5e7eb;
+  height: 56px;
+  z-index: 100;
+}
+
+.tab-bar__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: #9ca3af;
+  text-decoration: none;
+  font-size: 0.7rem;
+}
+
+.tab-bar__icon {
+  width: 24px;
+  height: 24px;
+  stroke-width: 1.5;
+}
+
+.tab-bar__item--active {
+  color: #1e3a5f;
+}
+
+.tab-bar__item--active .tab-bar__icon {
+  stroke: #1e3a5f;
+  fill: #1e3a5f;
+}
+
+.tab-bar__item--active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #1e3a5f;
+}
+
+.tab-bar__item {
+  position: relative;
+}
+
+.tab-bar__item:focus-visible {
+  outline: 2px solid #1e3a5f;
+  outline-offset: 2px;
+}
+
+/* --------------------------------------------------------------------------
+   Responsive styles (>768px) — single breakpoint, mobile-first min-width
+   -------------------------------------------------------------------------- */
+
+@media (min-width: 769px) {
+  .panico-disforico {
+    padding-inline: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
+  }
+
+  .panico-disforico__title {
+    font-size: var(--font-size-hero);
+  }
+
+  .tab-bar {
+    display: none;
+  }
+}
+

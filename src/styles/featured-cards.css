@@ -87,6 +87,15 @@
   padding: var(--spacing-sm) var(--spacing-sm) var(--spacing-md);
 }
 
+/* Línea de metadatos wrapper — category + reading-time en la misma línea */
+.featured-card__meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
+  margin-bottom: 0;
+}
+
 /* Línea de metadatos: "CINE • 5 min de lectura" en la misma línea.
    La categoría y el tiempo de lectura son spans en línea; la viñeta se genera
    antes del tiempo de lectura, de modo que cuando este se omite (readingTime
@@ -185,6 +194,11 @@
 .featured__cta:focus-visible {
   outline: 2px solid var(--color-accent);
   outline-offset: 2px;
+}
+
+/* CTA arrow — visual only, aria-hidden */
+.featured__cta-arrow {
+  margin-left: 0.25rem;
 }
 
 /* --------------------------------------------------------------------------
