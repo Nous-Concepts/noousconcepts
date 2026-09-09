@@ -52,7 +52,7 @@ Implementación de la pantalla "Neo Samaria Conexión" para el sitio Nous Concep
     - _Requirements: 1.3, 3.1_
 
 - [x] 5. Escribir tests unitarios
-  - [ ]* 5.1 Crear archivo de test `src/js/neo-samaria-conexion.test.js` con tests de estructura DOM
+  - [ ] 5.1 Crear archivo de test `src/js/neo-samaria-conexion.test.js` con tests de estructura DOM
     - Verificar que existe un único `<h1>` con texto "Neo Samaria Conexión"
     - Verificar orden vertical: header-placeholder → nav-placeholder → main
     - Verificar que `<main>` tiene clase `neo-samaria` y `aria-label` descriptivo

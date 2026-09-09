@@ -1,0 +1,832 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "Directorio `src/assets/images/contenidos/colombia-mix/` existe": [
+      {
+        "executionId": "153434d0-421e-4b1b-a803-404624de7151",
+        "chatSessionId": "sess_35597835-e56d-405d-8e10-f6e34a5b968e",
+        "timestamp": 1788627482219
+      },
+      {
+        "executionId": "153434d0-421e-4b1b-a803-404624de7151",
+        "chatSessionId": "sess_35597835-e56d-405d-8e10-f6e34a5b968e",
+        "timestamp": 1788627620868
+      }
+    ],
+    "Archivo `hero.webp` existe en el directorio correcto": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627730735
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627744269
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627783803
+      }
+    ],
+    "Formato WebP válido": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627730869
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627789292
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627791739
+      }
+    ],
+    "Tamaño < 500KB": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627730987
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627794277
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627796556
+      }
+    ],
+    "Archivo `src/pages/colombia-mix.html` existe": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627731090
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627799538
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627894780
+      }
+    ],
+    "`data-theme=\"light\"` en `<html>`": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627731202
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627898058
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627901691
+      }
+    ],
+    "Hojas de estilos enlazadas en orden: `variables.css` → `main.css` → `components.css` → `colombia-mix.css`": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627731301
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627904243
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627906599
+      }
+    ],
+    "Placeholders `#header-placeholder`, `#nav-placeholder`, `#footer-placeholder` presentes": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627731397
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627908894
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627911199
+      }
+    ],
+    "`<main id=\"main-content\" class=\"colombia-mix\" aria-label=\"Colombia Mix — Antología Musical\">`": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627731491
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627913894
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627917191
+      }
+    ],
+    "Único `<h1>` con texto \"Colombia Mix\"": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627731585
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627919393
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627921648
+      }
+    ],
+    "Texto de descripción coincide exactamente con Req 6 AC1": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627731688
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627924025
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627926601
+      }
+    ],
+    "`alt` de imagen: entre 10 y 125 caracteres, describe ilustración cómic B&N y lettering": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627731785
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627930459
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627933016
+      }
+    ],
+    "Ítem \"Contenido\" del Tab Bar tiene clase `tab-bar__item--active`": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627731885
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627935263
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627937835
+      }
+    ],
+    "`<script type=\"module\" src=\"../js/main.js\"></script>` al final del `<body>`": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627732018
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627940430
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627942945
+      }
+    ],
+    "Sin `style` inline en `<body>`, sin `loading=\"lazy\"` en imagen": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627732110
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627945367
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627947861
+      }
+    ],
+    "Archivo `src/styles/colombia-mix.css` existe": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627732211
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627950779
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628199433
+      }
+    ],
+    "`body { background-color: #f5f5f5; }` presente como primera regla": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627732314
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628202247
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628204752
+      }
+    ],
+    "Todos los selectores usan nomenclatura BEM `.colombia-mix__*`": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627732411
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628207495
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628209900
+      }
+    ],
+    "`.colombia-mix__label` usa `font-size: 0.75rem` (no `--font-size-sm`)": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627732512
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628212854
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628215316
+      }
+    ],
+    "`.colombia-mix__hero-wrapper` tiene solo `width: 100%` (sin `aspect-ratio`)": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627732618
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628217947
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628220384
+      }
+    ],
+    "`.colombia-mix__hero` tiene `width: 100%; height: auto; border-radius: 8px; display: block`": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627732722
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628222899
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628225555
+      }
+    ],
+    "`.colombia-mix__cta:focus-visible` usa `var(--color-accent)`": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627732818
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628228008
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628230620
+      }
+    ],
+    "Sección Tab Bar presente (`.tab-bar`, `.tab-bar__item`, `.tab-bar__item--active`, etc.)": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627732973
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628233333
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628235883
+      }
+    ],
+    "Un único breakpoint `@media (min-width: 769px)`": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627733073
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628238299
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628241386
+      }
+    ],
+    "CSS válido (sin errores de sintaxis)": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627733169
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628243808
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628246777
+      }
+    ],
+    "Los tres componentes se cargan sin errores 404": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627733263
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628251755
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628315620
+      }
+    ],
+    "HTML de componentes insertado en sus respectivos placeholders": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627733371
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628318438
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628320968
+      }
+    ],
+    "Toggle del menú hamburguesa funciona correctamente (atributos ARIA + animación)": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627733468
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628325053
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628327786
+      }
+    ],
+    "Sin errores en Console": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627733567
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628331854
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628334304
+      }
+    ],
+    "Logo navega a `home.html`": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627733670
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628337795
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628728148
+      }
+    ],
+    "CTA navega a `contenidos.html#colombia-mix`": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627733770
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628730784
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628733512
+      }
+    ],
+    "Los tres ítems del Tab Bar navegan a sus destinos": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627733869
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628736281
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628739021
+      }
+    ],
+    "Ítem activo tiene color `#1e3a5f` y clase `tab-bar__item--active`": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627733968
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628742000
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628745042
+      }
+    ],
+    "Todos los enlaces activables con teclado (Tab + Enter)": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627734108
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628747999
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628750587
+      }
+    ],
+    "Lighthouse Accessibility ≥ 90": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627734217
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628756134
+      }
+    ],
+    "axe DevTools sin violaciones WCAG 2.1 nivel A/AA": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627734313
+      }
+    ],
+    "Contraste de texto principal ≥ 4.5:1 (verificado con WebAIM Contrast Checker)": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627734413
+      }
+    ],
+    "Todos los elementos interactivos tienen área táctil ≥ 44×44px": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627734519
+      }
+    ],
+    "Único `<h1>`, jerarquía de encabezados sin saltos": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627734618
+      }
+    ],
+    "Orden de tabulación lógico (de arriba a abajo)": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627734717
+      }
+    ],
+    "Outline visible en todos los elementos con foco": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627734813
+      }
+    ],
+    "Botón hamburguesa activable con Enter y Espacio": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627734925
+      }
+    ],
+    "Lector anuncia correctamente landmark main, h1, imagen y CTA (o documentado como pendiente)": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627735025
+      }
+    ],
+    "Lighthouse Performance ≥ 90 (mobile throttled)": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627735128
+      }
+    ],
+    "LCP < 2.5s": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627735229
+      }
+    ],
+    "TBT < 200ms": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627735330
+      }
+    ],
+    "CLS < 0.1": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627735435
+      }
+    ],
+    "`hero.webp` < 500KB": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627735536
+      }
+    ],
+    "`src/js/colombia-mix.test.js` creado con ≥ 3 tests": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627735639
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788628899183
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788629386873
+      }
+    ],
+    "Todos los tests pasan (`npm test`)": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627735734
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788629389931
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788629393886
+      }
+    ],
+    "Tests importan `loadComponent` directamente desde `main.js`": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627735835
+      },
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788629397630
+      }
+    ],
+    "`src/js/colombia-mix-integration.test.js` creado con ≥ 3 tests": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627735928
+      }
+    ],
+    "Todos los tests pasan": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627736042
+      }
+    ],
+    "`fast-check` instalado como dev dependency (si no estaba)": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627736137
+      }
+    ],
+    "`src/js/colombia-mix-properties.test.js` creado con los 5 PBTs": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627736246
+      }
+    ],
+    "Todos los tests pasan con 100 iteraciones": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627736339
+      }
+    ],
+    "`npm test` pasa sin errores": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627736438
+      }
+    ],
+    "Cobertura líneas ≥ 80%, branches ≥ 70%, funciones ≥ 80%": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627736536
+      }
+    ],
+    "Entrada de changelog con fecha, archivos añadidos y métricas de performance/accesibilidad": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627736636
+      }
+    ],
+    "Issues abiertos (contraste, aspect-ratio si aplica) documentados": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627736738
+      }
+    ],
+    "HTML válido (W3C sin errores)": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627736837
+      }
+    ],
+    "CSS válido (W3C sin errores)": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627736936
+      }
+    ],
+    "Sin TODOs/FIXMEs sin resolver": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627737052
+      }
+    ],
+    "Linter pasa (si configurado)": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627737187
+      }
+    ],
+    "`npm test` verde": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627737288
+      }
+    ],
+    "Commit creado con mensaje descriptivo": [
+      {
+        "executionId": "0ab4beef-3def-49e7-843f-2b4fc287a8a1",
+        "chatSessionId": "sess_de89823b-16da-42ad-84b8-ababa7863426",
+        "timestamp": 1788627737387
+      }
+    ]
+  }
+}
